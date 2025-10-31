@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: 
+        url('img/clv.png') repeat, #6b5f67;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card{
+    width: 720px;
+    max-width: 100%;
+    background-color:  rgb(22, 39, 39),transparent; 
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px rgb(133, 129, 129); 
+    padding: 18px;
+}
+
+.card h1{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+.typing-area{
+    background: #8c756a ;
+    border: 1PX solid white;
+    border-radius: 6px;
+    min-height: 110px;
+    padding: 12px;
+    box-shadow: 0 0 7px 0 rgb(151, 139, 139);
+}
+
+.typing-area p{
+    margin: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #4b1e3d;
+}
+
+#paraghraph span.correct {
+    color: whitesmoke;
+}
+
+#paraghraph span.incorrect {
+    color: red;
+}
+
+#paraghraph span.active {
+    text-decoration: underline;
+}
+
+
+.controls{
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.controls input{
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+}
+
+.status{
+    display: flex;
+    gap: 14px;
+    margin-top: 12px;
+    align-items: center;
+    color: rgb(49, 47, 47);
+}
+
+.status div{
+    background:#8c756a ;
+    color: aliceblue;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px 0  rgb(105, 104, 104);;
+}
+
+.betwwen{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 7px;
+}
+
+button{
+    padding: 15px 14px; 
+    border-radius: 6px;
+    border: 1px solid white;
+    background-color: #8c756a ;
+    box-shadow: 0 0 10px 0 rgb(105, 104, 104);
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: 700;
+}
